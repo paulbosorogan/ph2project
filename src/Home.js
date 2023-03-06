@@ -5,10 +5,9 @@ function Home(){
     return (
         <div className="App">
         <header className="App-header">
+        <h1>thirstPlant 🌱</h1>
           <div className='container'>
-          <h1>thirstPlant 🌱</h1>
-          <h2>Coming soon</h2>
-          <p>a gentle reminder to water your plant babies</p>
+            <p>a gentle reminder to water your plants</p>
           </div>
         </header>
       </div>

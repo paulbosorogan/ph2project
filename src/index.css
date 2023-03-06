@@ -5,30 +5,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: antiquewhite;
+  background-color: whitesmoke;
+  position: static;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.container p{
-  padding: 50px;
+.container {
+  padding: 25px;
   border-style: solid;
   border-width: 5px;
   border-radius: 25px;
+}
+.container p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 .App {
   text-align: center;
 }
 .App-header {
-  background-color: #B2C887;
+  background-image: url(https://img.freepik.com/free-photo/background-with-natural-monstera-leaf-with-sunbeams-wall-copy-space_169016-13367.jpg?w=1480&t=st=1678061423~exp=1678062023~hmac=ccc8894c74a4e029757624a6d7b206acfc9d1ce4a01d00093f2885810a333662);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(18px + 2vmin);
   color: white;
 }
 .navbar ul{
@@ -36,14 +41,13 @@ code {
 }
 .navbar li{
     display: inline-block;
-    width: "50px";
-    padding: "12px";
-    margin: "0 6px 6px";
     background: "green";
     color: "white";
 }
 .nav-bttn {
-  padding: 5px;
-  background: #B2C887;
-  border-radius: 10px;
+  font: 1em sans-serif;
+  padding: 10px;
+  background: whitesmoke;
+  border: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
 }

@@ -17,14 +17,14 @@ return(
         <li><NavLink
              to="/plants"
              exact>
-              <button className="nav-bttn">Plants</button>
+              <button className="nav-bttn">Plant collection</button>
         </NavLink></li>
         </ul>
         <ul>
         <li><NavLink
                 to="/newplant"
                 exact>
-                <button className="nav-bttn">New Plant</button>
+                <button className="nav-bttn">Add new plant</button>
         </NavLink></li>
         </ul>
     </div> 

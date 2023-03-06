@@ -4,6 +4,7 @@ import Plants from './Plants'
 import NavBar from "./NavBar"
 import { Route, Switch } from 'react-router-dom';
 import NewPlant from './NewPlant';
+import { plants } from './db.json'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <NavBar/>
       <Switch>
         <Route path="/plants">
-          <Plants/>
+          <Plants plants={plants}/>
         </Route>
         <Route path="/newplant">
           <NewPlant/>
