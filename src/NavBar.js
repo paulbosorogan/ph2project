@@ -15,7 +15,7 @@ return(
         </ul>
         <ul>
         <li><NavLink
-             to="/plants"
+             to="/plantcollection"
              exact>
               <button className="nav-bttn">Plant collection</button>
         </NavLink></li>
