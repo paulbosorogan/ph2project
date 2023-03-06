@@ -1,0 +1,46 @@
+{
+    "plants" : [
+        {
+            "id": 1,
+            "name": "African Mask plant",
+            "image": "https://imgur.com/4Sy8py6",
+            "sunlight": ,
+            "water": ,
+        },
+        {
+            "id": 2,
+            "name": "Monstera",
+            "image": "https://imgur.com/undefined",
+            "sunlight": ,
+            "water": ,
+        },
+        {
+            "id": 3,
+            "name": "Snake Plant",
+            "image": "https://imgur.com/JqNFkCr",
+            "sunlight": ,
+            "water": ,
+        },
+        {
+            "id": 4,
+            "name": "Peace Lily",
+            "image": "https://imgur.com/E6hFXoV",
+            "sunlight": ,
+            "water": ,
+        },
+        {
+            "id": 5,
+            "name": "Red Anthurium",
+            "image": "https://imgur.com/ji6DV9m",
+            "sunlight": ,
+            "water": ,
+        },
+        {
+            "id": 6,
+            "name": "Fiddle Leaf Fig",
+            "image": "https://imgur.com/bYYpWOu",
+            "sunlight": ,
+            "water": ,
+        }
+    ]
+}
