@@ -1,17 +1,15 @@
 import React from "react";
+import PlantItem from './PlantItem.js'
 
 function Plants({plants}){
-   
+  
     return(
-        <div>
-            {plants.map((plant)=> (
-                <div className="plant-card" key={plant.id}>
-                    <img src={plant.image} alt='Plant'/>
-                    <h2>Name:{plant.name}</h2>
-                    <p>Sunlight need:{plant.sunlight}</p>
-                    <p>Water need:{plant.water}</p>
-                </div>
-            ))}
+        <div className="top-card">
+            <div className="plant-list">
+                {plants.map((plant)=> (
+                    <PlantItem plant={plant} key={plant.id}/>
+                ))}
+            </div>
         </div>
     )
 }

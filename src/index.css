@@ -24,8 +24,8 @@ code {
 .container p{
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  text-shadow: 20px;
 }
+
 .App {
   text-align: center;
 }
@@ -38,8 +38,9 @@ code {
   justify-content: center;
   font-size: calc(18px + 2vmin);
   color: white;
-  text-shadow: 20px;
+  text-shadow: 2px 2px 8px black;
 }
+
 .navbar ul{
   display: inline;
 }
@@ -54,4 +55,75 @@ code {
   background: whitesmoke;
   border: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
+}
+.form-box {
+  margin-top: 100px;
+  margin: auto;
+  background: whitesmoke;
+  max-width: 350px;
+  padding: 10px;
+  border-radius: 4px;
+}
+input[type=text] {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: .5px solid;
+  margin: 10px 0;
+}
+input[type=submit]{
+  width: 100px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: none;
+  background: #467a2a;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.top {
+  margin-top: 100px;
+  background-image: url(https://img.freepik.com/free-photo/green-plant-leaves-frame-background_53876-128837.jpg?w=1480&t=st=1678124680~exp=1678125280~hmac=3ea9351770e49a92e0abe20165bb1f9b8fcda351b491c40cd4b70e47b225d075);
+}
+
+.plant-card {
+  margin-top: 30px;
+  margin: auto;
+  background: whitesmoke;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 350px;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 60%;
+  
+}
+.plant-list{
+  margin: auto;
+  background-image: url(https://img.freepik.com/free-photo/close-up-green-palm-leaves_23-2147837966.jpg?w=1480&t=st=1678128587~exp=1678129187~hmac=23342e309f00c2bdc9bdddf1ca3f8aaa5a57ebb00b6a9275f52bb0574ebbbaa9);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.plant-list div{
+  align-items: center;
+}
+.plant-info {
+  text-align: center;
+  padding: 5px 10px;
+
+}
+.plant-info h2{
+  font-family: Arial, Helvetica, sans-serif
 }

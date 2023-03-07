@@ -10,17 +10,20 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(()=>{
-      fetch('http://localhost:3000/plants')
+      fetch('http://localhost:3001/plants')
       .then((r=> r.json()))
       .then((data)=> {
           setPlants(data)
-          console.log(data)
           setIsLoaded(true)
       })
   },[])
 
   if(!isLoaded) return <h1>Plants Loading ...</h1>
 
+  function onSubmit(plantEntry){
+    setPlants([...plants, plantEntry])
+  }
+  
   return (
     <div>
       <NavBar/>
@@ -29,7 +32,7 @@ function App() {
           <Plants plants={plants}/>
         </Route>
         <Route path="/newplant">
-          <NewPlant/>
+          <NewPlant onSubmit={onSubmit}/>
         </Route>
         <Route exact path="/">
           <Home/>
