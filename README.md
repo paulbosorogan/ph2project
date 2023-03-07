@@ -11,7 +11,7 @@ Once the application is loaded in the broswer window you will be able to see the
 
 - The Home component will contain the background image, the title and a short message.
 - The Plant collection holds the cards of each plant we have in our db.json server.
-Each card contains the picture of the plant, the name, the sunglight level (🔆) and water level (💧) required by the plant; a last time the plant was watered date (notified by a day of the week) and the user has the ability to introduce a new day when the plant was watered.
+Each card contains the picture of the plant, the name, the sunglight level (🔆) and water level (💧) required by the plant; a calendar to choose the last date the plant was watered.
 - Add New Plant component hosts the form that allows us to add a new plant entry in our page. After hitting 'Submit' by using {useHistory} -> history.push(URL) the user is automatically sent back to the Plant Collection component where the new entry is rendered without refreshing the page by the onSubmit() function. 
 After the new entry was rendered on the page, inside the handleSubmit() function a new fetch request POST will add the entry in our db.json server.
 
