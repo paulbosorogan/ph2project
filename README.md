@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Phase 2 Project - thirstPlant 
+In order to see the project you'll need to install the React npm package
+`npx create-react-app` and then `npm start` once the package is installed.
+You should be able to see the application in the browser window. 
+This SPA is getting its data from a local db.json so in your additional terminal run the following `json-server --watch db.json --port 3001`. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Application introduction
+thirstPlant is a single page application designed to remind ourselves the last time we watered our plants. I have been there and I am sure you are as well. 
 
-## Available Scripts
+Once the application is loaded in the broswer window you will be able to see the Home page with a navigation bar on top of the page in the left corner: Home, Plant Collection and Add New Plant.
 
-In the project directory, you can run:
+- The Home component will contain the background image, the title and a short message.
+- The Plant collection holds the cards of each plant we have in our db.json server.
+Each card contains the picture of the plant, the name, the sunglight level (🔆) and water level (💧) required by the plant; a last time the plant was watered date (notified by a day of the week) and the user has the ability to introduce a new day when the plant was watered.
+- Add New Plant component hosts the form that allows us to add a new plant entry in our page. After hitting 'Submit' by using {useHistory} -> history.push(URL) the user is automatically sent back to the Plant Collection component where the new entry is rendered without refreshing the page by the onSubmit() function. 
+After the new entry was rendered on the page, inside the handleSubmit() function a new fetch request POST will add the entry in our db.json server.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Curriculum aid
+For this application I have taken inspiration from the following labs in our curriculum at FlatIron School:
+- Phase 1: [Toy Tale lab](https://learning.flatironschool.com/courses/5649/assignments/207816?module_item_id=479146)
+This was used in order to create the cards for the plants.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Additional resources
+- For the form CSS styling I have taken inspiration for YouTube [video](https://www.youtube.com/watch?v=LcKHti3gCJw) 
+- For the backgrounds and plant cards I have used pictures from [freepike](www.freepik.com)
+- For CSS styling I have used [w3b school](www.w3school.com)
