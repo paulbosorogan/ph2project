@@ -41,6 +41,13 @@
       "image": "https://i.imgur.com/bYYpWOu.jpg",
       "sunlight": "🔆🔆🔆🔆",
       "water": "💧💧💧"
+    },
+    {
+      "name": "Succulent",
+      "sunlight": "🔆🔆",
+      "water": "💧💧",
+      "image": "https://i.imgur.com/8epBS7F.jpg",
+      "id": 7
     }
   ]
 }
