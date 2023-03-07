@@ -5,7 +5,6 @@ import 'react-calendar/dist/Calendar.css'
 function PlantItem({plant}){
     const [date, setDate] = useState(new Date())
     const [isDate, setIsDate] = useState(true)
-
     
     function onChange(date){
      setDate(date)
@@ -19,9 +18,8 @@ function PlantItem({plant}){
                 <h2>{plant.name}</h2>
                 <p>Sunlight : {plant.sunlight}</p>
                 <p>Water : {plant.water}</p>
-                <Calendar  onChange={onChange} value={date}/>
+                <Calendar onChange={onChange} value={date}/>
                 { isDate ? "" : <p>Last watered on: <b>{date.toDateString()}</b></p>}
-                
             </div>                       
         </div> 
     )
