@@ -18,8 +18,7 @@ function NewPlant({onSubmit}){
             name: plantName,
             sunlight: plantSunLevel,
             water: plantWaterLevel,
-            image: plantUrl,
-            day: "Monday",
+            image: plantUrl
         }
        
 
