@@ -25,3 +25,5 @@ This was used in order to create the cards for the plants.
 - For the form CSS styling I have taken inspiration for YouTube [video](https://www.youtube.com/watch?v=LcKHti3gCJw) 
 - For the backgrounds and plant cards I have used pictures from [freepike](www.freepik.com)
 - For CSS styling I have used [w3b school](www.w3school.com)
+- Installed npm react-calendar [source](https://www.npmjs.com/package/react-calendar)
+- Walk-through Calendar YouTube [video](https://www.youtube.com/watch?v=eM8n55lad1c)
