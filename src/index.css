@@ -30,7 +30,8 @@ code {
   text-align: center;
 }
 .App-header {
-  background-image: url(https://img.freepik.com/free-photo/background-with-natural-monstera-leaf-with-sunbeams-wall-copy-space_169016-13367.jpg?w=1480&t=st=1678061423~exp=1678062023~hmac=ccc8894c74a4e029757624a6d7b206acfc9d1ce4a01d00093f2885810a333662);
+  background-image: url(https://i.imgur.com/CZjtEgI.jpg);
+  background-size: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -85,34 +86,42 @@ input[type=submit]{
   cursor: pointer;
   position: relative;
 }
-.top {
-  margin-top: 100px;
-  background-image: url(https://img.freepik.com/free-photo/green-plant-leaves-frame-background_53876-128837.jpg?w=1480&t=st=1678124680~exp=1678125280~hmac=3ea9351770e49a92e0abe20165bb1f9b8fcda351b491c40cd4b70e47b225d075);
+.new-plant-box {
+  margin-top: 50px;
+  background-image: url(https://i.imgur.com/vYpceBk.jpg);
+  background-size: 100%
 }
 
 .plant-card {
   margin-top: 30px;
   margin: auto;
-  background: whitesmoke;
+  background-image: linear-gradient(to right, #B2C887,#a3c288);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 350px;
   padding: 5px;
-  border-radius: 4px;
-  margin-bottom: 50px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
   box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height: 60%;
+  height: auto;
+  max-height: 250px;
+  width: auto;
+  max-width: 250px;
   
 }
 .plant-list{
   margin-top: 10px;
-  background-image: url(https://img.freepik.com/free-photo/close-up-green-palm-leaves_23-2147837966.jpg?w=1480&t=st=1678128587~exp=1678129187~hmac=23342e309f00c2bdc9bdddf1ca3f8aaa5a57ebb00b6a9275f52bb0574ebbbaa9);
+  background-image: url(https://i.imgur.com/R3oWdo9.jpg);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -126,4 +135,7 @@ img {
 }
 .plant-info h2{
   font-family: Arial, Helvetica, sans-serif
+}
+.nav-bttn:hover{
+  background-color: #a3c288;
 }
