@@ -4,50 +4,57 @@
       "id": 1,
       "name": "African Mask plant",
       "image": "https://i.imgur.com/4Sy8py6.jpg",
-      "sunlight": "🔆🔆🔆🔆",
-      "water": "💧💧💧"
+      "sunlight": "high",
+      "water": "medium",
+      "lastWatered": ""
     },
     {
       "id": 2,
       "name": "Monstera",
       "image": "https://i.imgur.com/zJyQcP3.jpg",
-      "sunlight": "🔆🔆🔆",
-      "water": "💧💧"
+      "sunlight": "medium",
+      "water": "low",
+      "lastWatered": ""
     },
     {
       "id": 3,
       "name": "Snake Plant",
       "image": "https://i.imgur.com/JqNFkCr.jpg",
-      "sunlight": "🔆🔆",
-      "water": "💧💧"
+      "sunlight": "low",
+      "water": "medium",
+      "lastWatered": ""
     },
     {
       "id": 4,
       "name": "Peace Lily",
       "image": "https://i.imgur.com/E6hFXoV.jpg",
-      "sunlight": "🔆🔆",
-      "water": "💧💧💧💧"
+      "sunlight": "high",
+      "water": "medium",
+      "lastWatered": ""
     },
     {
       "id": 5,
       "name": "Red Anthurium",
       "image": "https://i.imgur.com/ji6DV9m.jpg",
-      "sunlight": "🔆🔆🔆",
-      "water": "💧"
+      "sunlight": "medium",
+      "water": "low",
+      "lastWatered": ""
     },
     {
       "id": 6,
       "name": "Fiddle Leaf Fig",
       "image": "https://i.imgur.com/bYYpWOu.jpg",
-      "sunlight": "🔆🔆🔆🔆",
-      "water": "💧💧💧"
+      "sunlight": "high",
+      "water": "medium",
+      "lastWatered": ""
     },
     {
+      "id": 7,
       "name": "Succulent",
-      "sunlight": "🔆🔆",
-      "water": "💧💧",
+      "sunlight": "low",
+      "water": "medium",
       "image": "https://i.imgur.com/8epBS7F.jpg",
-      "id": 7
+      "lastWatered": ""
     }
   ]
 }
