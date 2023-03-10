@@ -18,7 +18,8 @@ function NewPlant({onSubmit}){
             name: plantName,
             sunlight: plantSunLevel,
             water: plantWaterLevel,
-            image: plantUrl
+            image: plantUrl,
+            lastWatered: ""
         }
        
 
@@ -36,16 +37,27 @@ function NewPlant({onSubmit}){
 
     }
     return(
-        <div className="top">
+        <div className="new-plant-box" >
          <div className="form-box">
             <h3>Add a new plant to your collection!</h3>
           <form action="" onSubmit={handleSubmit}>
             <label>Name:</label>
             <input type="text" name="name" value={plantName} onChange={e=> setPlantName(e.target.value)}/>
-            <label>Sunlight needed:</label>
-            <input type="text" name="sunlight" value={plantSunLevel} onChange={e=> setPlantSunLevel(e.target.value)}/>
-            <label>Water needed:</label>
-            <input type="text" name="water" value={plantWaterLevel} onChange={e=> setPlantWaterLevel(e.target.value)}/>
+            <h3>Sunlight level:</h3>
+            {/* make dropdown for sunglight and water level */}
+            <select value={plantSunLevel} onChange={e=> setPlantSunLevel(e.target.value)}>
+            <option></option>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+            </select>
+            <h3>Water level:</h3>
+            <select value={plantWaterLevel} onChange={e=> setPlantWaterLevel(e.target.value)}>
+            <option></option>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+            </select><br></br>
             <label>Image:</label>
             <input type="text" name="image" value={plantUrl} onChange={e=> setPlantUrl(e.target.value)}/>
             <input type="submit" value="Submit"/>

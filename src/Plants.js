@@ -7,7 +7,7 @@ function Plants({plants}){
         <div className="top-card">
             <div className="plant-list">
                 {plants.map((plant)=> (
-                    <PlantItem plant={plant} key={plant.id}/>
+                    <PlantItem plant={plant} key={plant.id} plants={plants}/>
                 ))}
             </div>
         </div>
