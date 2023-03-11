@@ -1,44 +1,42 @@
 import React, { useState } from "react";
 import Calendar from "react-calendar";
-import 'react-calendar/dist/Calendar.css'
+import './index.css'
 
-function PlantItem({plant, plants}){
+function PlantItem({plant}){
     const [date, setDate] = useState(new Date())
-    const [isDate, setIsDate] = useState(true)
+    const [isDate, setIsDate] = useState(false)
     
-
     function onChange(date){
      setDate(date)
      setIsDate((isDate)=> !isDate)
-     updateCard(date)
     }
+    function handleClick(){
 
-    function updateCard(id){
-     fetch(`http://localhost:3001/plants/${id}`,{
+     fetch(`http://localhost:3001/plants/${plant.id}`,{
         method: "PATCH",
         headers: {
-            "Content-Type": "application/json",
+            "Content-Type" : "application/json",
         },
-        body: { 
-            ...plants,
+        body: JSON.stringify({
             lastWatered: date.toDateString()
-        }
-
+        })
      })
      .then(r=>r.json())
-     .then(updatedCard => console.log(updatedCard))
+     .then(updatedKey=> console.log(updatedKey))
     }
-
+    
     return(
-        <div className="plant-card" key={plant.id}>
+        <div className="plant-card" key={plant.name} >
          <img src={plant.image} alt='Plant'/>
              <div className="plant-info">
                 <h2>{plant.name}</h2>
-                <p>Sunlight level: <b>{plant.sunlight}</b></p>
-                <p>Water level: <b>{plant.water}</b></p>
-                <Calendar onClick={updateCard} onChange={onChange} value={date}/>
-                { isDate ? "" : <p>Last watered on: <b>{date.toDateString()}</b></p>}
-    
+                <p>sunlight level: <b>{plant.sunlight}</b></p>
+                <p>water level: <b>{plant.water}</b></p>
+                <p>plant was last watered on: <b>{plant.lastWatered}</b></p>
+                <Calendar onChange={onChange} value={date}/>
+                { !isDate ? "" : <p>watered on: <b>{date.toDateString()}</b></p>}
+                <br></br>
+                <button className="date-bttn" onClick={handleClick}>Update date</button>
             </div>                       
         </div>
     )
