@@ -23,19 +23,20 @@ function App() {
   function onSubmit(plantEntry){
     setPlants([...plants, plantEntry])
   }
+
   
   return (
     <div>
       <NavBar/>
       <Switch>
-        <Route path="/plantcollection">
-          <Plants plants={plants}/>
-        </Route>
-        <Route path="/newplant">
-          <NewPlant onSubmit={onSubmit}/>
-        </Route>
         <Route exact path="/">
           <Home/>
+        </Route>
+        <Route exact path="/plantcollection">
+          <Plants plants={plants}/>
+        </Route>
+        <Route exact path="/newplant">
+          <NewPlant onSubmit={onSubmit}/>
         </Route>
       </Switch>
     </div>
