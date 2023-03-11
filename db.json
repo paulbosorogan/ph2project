@@ -6,15 +6,14 @@
       "image": "https://i.imgur.com/4Sy8py6.jpg",
       "sunlight": "high",
       "water": "medium",
-      "lastWatered": ""
-    },
+      "lastWatered": "Please select calendar date"    },
     {
       "id": 2,
       "name": "Monstera",
       "image": "https://i.imgur.com/zJyQcP3.jpg",
       "sunlight": "medium",
       "water": "low",
-      "lastWatered": ""
+      "lastWatered": "Please select calendar date"
     },
     {
       "id": 3,
@@ -22,7 +21,7 @@
       "image": "https://i.imgur.com/JqNFkCr.jpg",
       "sunlight": "low",
       "water": "medium",
-      "lastWatered": ""
+      "lastWatered": "Please select calendar date"
     },
     {
       "id": 4,
@@ -30,7 +29,7 @@
       "image": "https://i.imgur.com/E6hFXoV.jpg",
       "sunlight": "high",
       "water": "medium",
-      "lastWatered": ""
+      "lastWatered": "Please select calendar date"
     },
     {
       "id": 5,
@@ -38,7 +37,7 @@
       "image": "https://i.imgur.com/ji6DV9m.jpg",
       "sunlight": "medium",
       "water": "low",
-      "lastWatered": ""
+      "lastWatered": "Please select calendar date"
     },
     {
       "id": 6,
@@ -46,7 +45,7 @@
       "image": "https://i.imgur.com/bYYpWOu.jpg",
       "sunlight": "high",
       "water": "medium",
-      "lastWatered": ""
+      "lastWatered": "Please select calendar date"
     },
     {
       "id": 7,
@@ -54,7 +53,7 @@
       "sunlight": "low",
       "water": "medium",
       "image": "https://i.imgur.com/8epBS7F.jpg",
-      "lastWatered": ""
+      "lastWatered": "Please select calendar date"
     }
   ]
 }
