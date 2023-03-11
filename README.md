@@ -10,8 +10,10 @@ thirstPlant is a single page application designed to remind ourselves the last t
 Once the application is loaded in the broswer window you will be able to see the Home page with a navigation bar on top of the page in the left corner: Home, Plant Collection and Add New Plant.
 
 - The Home component will contain the background image, the title and a short message.
+
 - The Plant collection holds the cards of each plant we have in our db.json server.
-Each card contains the picture of the plant, the name, the sunglight level (🔆) and water level (💧) required by the plant; a calendar to choose the last date the plant was watered.
+Each card contains the picture of the plant, the name, the sunglight and water level marked with 'low', 'medium' or 'high'; required by the plant, a 'plant wast watered last on' with a default 'Please select calendar date', a calendar to choose the last date the plant was watered and an 'Update date' button that will update the json server with the last date selected by the user, after refreshing the page the new date updating the default value form server.
+
 - Add New Plant component hosts the form that allows us to add a new plant entry in our page. After hitting 'Submit' by using {useHistory} -> history.push(URL) the user is automatically sent back to the Plant Collection component where the new entry is rendered without refreshing the page by the onSubmit() function. 
 After the new entry was rendered on the page, inside the handleSubmit() function a new fetch request POST will add the entry in our db.json server.
 
