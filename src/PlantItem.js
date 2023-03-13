@@ -23,6 +23,9 @@ function PlantItem({plant}){
      })
      .then(r=>r.json())
      .then(updatedKey=> console.log(updatedKey))
+
+     alert('Date has been successfully updated!')
+
     }
     
     return(
@@ -36,7 +39,7 @@ function PlantItem({plant}){
                 <Calendar onChange={onChange} value={date}/>
                 { !isDate ? "" : <p>watered on: <b>{date.toDateString()}</b></p>}
                 <br></br>
-                <button className="date-bttn" onClick={handleClick}>Update date</button>
+                <button className="date-bttn" onClick={handleClick}>Confirm date</button>
             </div>                       
         </div>
     )
